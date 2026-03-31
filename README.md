@@ -1,4 +1,6 @@
-# Game loop
+# Asteroids
+
+## Game loop
 Video games are generally built using a game loop. A simple loop has 3 steps:
 1. Check for player inputs
 2. Update the game world
