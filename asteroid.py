@@ -24,6 +24,9 @@ class Asteroid(CircleShape):
         first_asteroid_velocity = self.velocity.rotate(rotation_number)
         second_asteroid_velocity = self.velocity.rotate(-rotation_number)
         new_radius = self.radius - ASTEROID_MIN_RADIUS
+        # we pass self.position.x as the variable is neither attached to parent nor the current class
+        # TRICKY
+        # CONCEPT
         first_asteroid = Asteroid(self.position.x, self.position.y, new_radius)
         second_asteroid = Asteroid(self.position.x, self.position.y, new_radius)
         first_asteroid.velocity = first_asteroid_velocity * 1.2
